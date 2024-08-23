@@ -12,16 +12,15 @@
     font-family: "Montserrat Alternates", sans-serif;
     color: #fff;
     position: relative;
-
+    
   }
-
+  
 
   body::before {
     content: "";
     position: fixed;
     /* Cor Do Fundo da Tela HOME */
-    background: linear-gradient(to bottom, #505050, #000000);
-    background-size: cover;
+    background: linear-gradient(to bottom , #505050, #000000);    background-size: cover;
     left: 0;
     right: 0;
     top: 0;
@@ -43,12 +42,7 @@
     text-decoration: none;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat Alternates", sans-serif;
   }
 
@@ -79,8 +73,7 @@
     font-family: "Poppins", sans-serif;
   }
 
-  #header h1 a,
-  #header h1 a:hover {
+  #header h1 a, #header h1 a:hover {
     color: #dee2e6;
     line-height: 1;
     display: inline-block;
@@ -94,7 +87,7 @@
 
   #header h2 span {
     color: #51c5ec;
-    border-bottom: 2px solid #51c5ec;
+    border-bottom: 2px solid #51c5ec  ;
     padding-bottom: 6px;
   }
 
@@ -130,16 +123,13 @@
     #header h1 {
       font-size: 36px;
     }
-
     #header h2 {
       font-size: 20px;
       line-height: 30px;
     }
-
     #header .social-links {
       margin-top: 15px;
     }
-
     #header .container {
       display: flex;
       flex-direction: column;
@@ -162,7 +152,7 @@
     list-style: none;
   }
 
-  .nav-menu li+li {
+  .nav-menu li + li {
     margin-left: 30px;
   }
 
@@ -188,16 +178,12 @@
     transition: all 0.3s ease-in-out 0s;
   }
 
-  .nav-menu a:hover:before,
-  .nav-menu li:hover>a:before,
-  .nav-menu .active>a:before {
+  .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
     visibility: visible;
     width: 25px;
   }
 
-  .nav-menu a:hover,
-  .nav-menu .active>a,
-  .nav-menu li:hover>a {
+  .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
     color: #51c5ec;
     text-decoration: none;
   }
@@ -254,9 +240,7 @@
     outline: none;
   }
 
-  .mobile-nav a:hover,
-  .mobile-nav .active>a,
-  .mobile-nav li:hover>a {
+  .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
     color: #51c5ec;
     text-decoration: none;
   }
@@ -297,8 +281,7 @@
     background: #525252;
   }
 
-  #header.header-top .social-links,
-  #header.header-top h2 {
+  #header.header-top .social-links, #header.header-top h2 {
     display: none;
   }
 
@@ -320,7 +303,6 @@
     #header.header-top {
       height: 60px;
     }
-
     #header.header-top h1 {
       font-size: 26px;
     }
@@ -355,7 +337,6 @@
     section {
       top: 120px;
     }
-
     section.section-show {
       top: 80px;
     }
@@ -423,57 +404,7 @@
   .about-me .img-fluid {
     /* height: 500px;/ */
     width: auto;
-
-
-    .icon-box {
-      background: rgba(213, 213, 213, 0.6);
-      border-radius: 10px;
-      padding: 10px;
-      overflow-y: auto;
-    }
-
-    .icon-box h4 {
-      text-align: left;
-      color: #FFF;
-    }
-
-    .skills-icons {
-      text-align: left;
-      max-height: 150px;
-      /* Adjust based on your desired height */
-      overflow-y: auto;
-    }
-
-    .skill-icon {
-      display: block;
-      margin: 5px 0;
-      max-width: 30px;
-    }
-
-    .icon-box {
-      background: rgba(213, 213, 213, 0.6);
-      border-radius: 10px;
-      padding: 10px;
-      overflow-y: auto;
-    }
-
-    .icon-box h4 {
-      text-align: left;
-      color: #FFF;
-    }
-
-    .skills-icons {
-      text-align: left;
-      max-height: 150px;
-      /* Adjust based on your desired height */
-      overflow-y: auto;
-    }
-
-    .skill-icon {
-      display: block;
-      margin: 5px 0;
-      max-width: 30px;
-    }
+    
   }
 
   /*--------------------------------------------------------------
@@ -547,35 +478,28 @@
 
   @media (max-width: 768px) {
     .col-lg-12 {
-      height: auto !important;
+        height: auto !important;
     }
-  }
-
+}
   .skills .progress-bar {
     width: 1px;
     height: 10px;
     transition: .9s;
     background-color: #1c7d32;
   }
-
   .skills-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    /* Adiciona espaçamento entre as imagens */
-    justify-content: flex-start;
-    /* Alinha as imagens à esquerda */
+    gap: 10px; /* Adiciona espaçamento entre as imagens */
+    justify-content: flex-start; /* Alinha as imagens à esquerda */
     align-items: center;
     align-content: center;
   }
 
   .skill-icon {
-    max-height: 50px;
-    /* Define a altura máxima das imagens */
-    width: auto;
-    /* Ajusta a largura automaticamente para manter a proporção */
-    max-width: 150px;
-    /* Define a largura máxima das imagens */
+    max-height: 50px; /* Define a altura máxima das imagens */
+    width: auto; /* Ajusta a largura automaticamente para manter a proporção */
+    max-width: 150px; /* Define a largura máxima das imagens */
   }
 
   /*--------------------------------------------------------------
@@ -639,8 +563,7 @@
     margin: 0 0 0 45px;
   }
 
-  .testimonials .testimonial-item .quote-icon-left,
-  .testimonials .testimonial-item .quote-icon-right {
+  .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
     color: rgba(255, 255, 255, 0.25);
     font-size: 26px;
   }
@@ -669,8 +592,7 @@
     z-index: 1;
   }
 
-  .testimonials .owl-nav,
-  .testimonials .owl-dots {
+  .testimonials .owl-nav, .testimonials .owl-dots {
     margin-top: 5px;
     text-align: center;
   }
@@ -831,8 +753,7 @@
     background: #35e888;
   }
 
-  .services .icon-box:hover h4 a,
-  .services .icon-box:hover p {
+  .services .icon-box:hover h4 a, .services .icon-box:hover p {
     color: #12d640;
   }
 
@@ -844,19 +765,13 @@
   }
 
   .portfolio-image {
-    height: 250px;
-    /* Definir uma altura fixa */
-    width: 100%;
-    /* Fazer a imagem preencher a largura do container */
-    object-fit: cover;
-    /* Garantir que a imagem preencha o espaço sem distorção */
+    height: 250px; /* Definir uma altura fixa */
+    width: 100%; /* Fazer a imagem preencher a largura do container */
+    object-fit: cover; /* Garantir que a imagem preencha o espaço sem distorção */
   }
-
   .badge-image {
-    height: 150px;
-    /* Definir uma altura fixa */
-    width: auto;
-    /* Ajustar a largura automaticamente para manter a proporção */
+    height: 150px; /* Definir uma altura fixa */
+    width: auto; /* Ajustar a largura automaticamente para manter a proporção */
     display: block;
     margin: 0 auto;
   }
@@ -885,8 +800,7 @@
     border-radius: 4px;
   }
 
-  .portfolio #portfolio-flters li:hover,
-  .portfolio #portfolio-flters li.filter-active {
+  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
     background: #1c7d32;
   }
 
@@ -1115,8 +1029,7 @@
     animation: animate-loading 1s linear infinite;
   }
 
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
+  .contact .php-email-form input, .contact .php-email-form textarea {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
@@ -1126,37 +1039,31 @@
     color: #fff;
   }
 
-  .contact .php-email-form input:focus,
-  .contact .php-email-form textarea:focus {
+  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
     background-color: rgba(255, 255, 255, 0.11);
   }
 
-  .contact .php-email-form input::-webkit-input-placeholder,
-  .contact .php-email-form textarea::-webkit-input-placeholder {
+  .contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3);
     opacity: 1;
   }
 
-  .contact .php-email-form input::-moz-placeholder,
-  .contact .php-email-form textarea::-moz-placeholder {
+  .contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
     color: rgba(255, 255, 255, 0.3);
     opacity: 1;
   }
 
-  .contact .php-email-form input:-ms-input-placeholder,
-  .contact .php-email-form textarea:-ms-input-placeholder {
+  .contact .php-email-form input:-ms-input-placeholder, .contact .php-email-form textarea:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3);
     opacity: 1;
   }
 
-  .contact .php-email-form input::-ms-input-placeholder,
-  .contact .php-email-form textarea::-ms-input-placeholder {
+  .contact .php-email-form input::-ms-input-placeholder, .contact .php-email-form textarea::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3);
     opacity: 1;
   }
 
-  .contact .php-email-form input::placeholder,
-  .contact .php-email-form textarea::placeholder {
+  .contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
     color: rgba(255, 255, 255, 0.3);
     opacity: 1;
   }
@@ -1186,7 +1093,6 @@
     0% {
       transform: rotate(0deg);
     }
-
     100% {
       transform: rotate(360deg);
     }
@@ -1196,7 +1102,6 @@
     0% {
       transform: rotate(0deg);
     }
-
     100% {
       transform: rotate(360deg);
     }
