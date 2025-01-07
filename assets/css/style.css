@@ -497,6 +497,8 @@
   }
 
   .skill-icon {
+     height: 50px;
+    /* width: 50px; */
     max-height: 50px; /* Define a altura máxima das imagens */
     width: auto; /* Ajusta a largura automaticamente para manter a proporção */
     max-width: 150px; /* Define a largura máxima das imagens */
